@@ -1,0 +1,129 @@
+/* Základní styly pro tělo stránky - modrý gradient na pozadí a centrování obsahu */
+body {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Styly pro hlavní nadpis */
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  text-shadow: none;
+}
+
+/* Malý text pod hlavním nadpisem s informací o zdroji dat */
+.nasa-credit {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* Logo NASA pod kreditem */
+.nasa-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 30px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.nasa-logo:hover {
+  opacity: 1;
+}
+
+/* Styly pro nadpis obrázku */
+h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+/* Kontejner pro celý obsah aplikace se světlým pozadím */
+.container {
+  max-width: 900px;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover efekt pro kontejner */
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Styly pro NASA obrázek */
+.nasa-img {
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 0;
+}
+
+.nasa-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* Styly pro popis obrázku */
+.description {
+  text-align: center;
+  line-height: 1.8;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  border: 1px solid #dee2e6;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #495057;
+}
+
+/* Styly pro datum */
+.date {
+  color: #6c757d;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* Styly pro načítací zprávu */
+.loader {
+  font-size: 1.5em;
+  font-weight: 500;
+  animation: pulse 2s infinite;
+}
+
+/* Animace pro pulzování načítací zprávy */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Animace pro kartu s obsahem */
+.card {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Animace pro postupné zobrazení karty */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
