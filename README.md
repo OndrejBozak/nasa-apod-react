@@ -1,16 +1,36 @@
-# React + Vite
+# 🚀 NASA Astronomy Picture of the Day App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project uses the official **NASA API**, specifically the **Astronomy Picture of the Day (APOD)** service.  
+The API provides a daily astronomy image along with a detailed explanation written by professional astronomers.
 
-Currently, two official plugins are available:
+The NASA API is free to use with a personal API key.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌌 About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This application:
 
-## Expanding the ESLint configuration
+- 📷 Fetches the **Picture of the Day**
+- 📝 Displays the image title and explanation
+- 📅 Allows selecting a specific date
+- 🌍 Uses NASA's official public API
+- ⚡ Demonstrates working with REST APIs and JSON data
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project was used for:
+
+- Learning how to work with APIs
+- Practicing frontend development
+- Understanding asynchronous data fetching
+
+---
+
+## 🔑 NASA API Access
+
+NASA provides free public APIs for developers.
+
+---
+
+## 📸 Screenshot
+
+![Application Screenshot](./Screenshot.png)
